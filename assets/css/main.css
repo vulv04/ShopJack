@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: Poppins, sans-serif;
+  max-width: 1440px;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+header {
+  background-color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(255, 239, 213, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 643px;
+}
+
+.banner-content h1 {
+  color: #b88e2f;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+.banner-content h4 {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+
+.banner-content p {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 17px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b88e2f;
+  color: #fff;
+  padding: 25px 72px;
+  text-decoration: none;
+  margin-top: 46px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.title h3 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.title p {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.category img {
+  border-radius: 10px;
+  width: 381px;
+  max-width: 100%;
+}
+.category p {
+  color: #333;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.banner-decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 40px;
+  background: #fcf8f3;
+  margin-top: 30px;
+}
+
+.decor-text {
+  max-width: 400px;
+}
+
+.decor-text h1 {
+  font-size: 2rem;
+  color: #4a4039;
+}
+
+.decor-text p {
+  color: #7a7a7a;
+  margin: 10px 0;
+}
+
+.decor-text .btn {
+  display: inline-block;
+  background: #b88e2f;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.decor-text .btn:hover {
+  background-color: #7a5e3f;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  padding: 10px 15px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.card-contentt {
+  position: absolute;
+  bottom: 124px;
+  left: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  padding: 10px 15px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  right: 25%;
+  top: 93%;
+}
+
+.card-content span {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.card-content p {
+  color: #616161;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
