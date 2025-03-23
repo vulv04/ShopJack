@@ -26,12 +26,13 @@
 @import "components/collections";
 @import "components/decor";
 @import "components/filterProduct";
+@import "components/filterGroup";
 @import "components/hero";
 @import "components/modal";
 @import "components/paginate";
 @import "components/productList";
 @import "components/services";
-
+@import "components/checkout";
 // 6. Pages - SCSS riêng cho từng trang
 @import "pages/about";
 @import "pages/cart";
