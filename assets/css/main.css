@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -427,4 +428,193 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 60px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: orange;
+  font-weight: 900;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+}
+
+.icon a {
+  color: #000000;
+}
+
+footer {
+  width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+  height: 270px;
+}
+
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%; /* Đảm bảo support chiếm toàn bộ chiều rộng */
+  height: 150px; /* Điều chỉnh chiều cao cho phù hợp */
+  background-color: #FAF3EA;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0; /* Thêm padding để tạo khoảng cách */
+}
+
+.support-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.support-item img {
+  height: 40px; /* Điều chỉnh kích thước ảnh */
+  margin-right: 15px; /* Thêm khoảng cách giữa ảnh và văn bản */
+}
+
+.support-text h3 {
+  margin: 0; /* Loại bỏ margin mặc định */
+  font-size: 16px; /* Điều chỉnh kích thước chữ */
+  font-weight: bold;
+}
+
+.support-text p {
+  margin: 0; /* Loại bỏ margin mặc định */
+  font-size: 14px; /* Điều chỉnh kích thước chữ */
+  color: #666; /* Điều chỉnh màu chữ */
+}
+
+.footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 100px;
+  border-top: 1px solid #eee;
+}
+
+.footer-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  margin-right: 100px;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer-logo {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer-address {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.newsletter-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.newsletter-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.newsletter-item {
+  margin-right: 20px;
+}
+
+.newsletter-text {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.newsletter-text.subscribe {
+  font-weight: bold;
+}
+
+.newsletter-underline {
+  border-bottom: 1px solid #ccc;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.newsletter-underline-2 {
+  border-bottom: 1px solid #ccc;
+  width: 100px;
+  margin-top: 5px;
+}
+
+.footer-copyright {
+  text-align: start;
+  padding: 10px 100px;
+  /* border-top: 1px solid #eee; */
+}
+
+.copyright-line {
+  border-bottom: 1px solid #D9D9D9;
+  width: 100%; /* Đường gạch chân chiếm 80% chiều rộng */
+  margin: 0 auto 10px; /* Căn giữa và tạo khoảng cách */
 }

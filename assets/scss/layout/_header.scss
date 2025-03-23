@@ -206,3 +206,40 @@ header {
 		line-height: 150%;
 	}
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 75px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: orange;
+    font-weight: 900;
+}
+
+.icon {
+    display: flex;
+    gap: 45px;
+
+}
+
+.icon a {
+    color: #000000;
+
+}
