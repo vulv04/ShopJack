@@ -142,8 +142,7 @@ table {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -213,8 +212,7 @@ header {
   position: absolute;
   top: 50%;
   right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: rgba(255, 239, 213, 0.9);
   padding: 40px;
   border-radius: 12px;
@@ -276,14 +274,9 @@ header {
 }
 
 .category {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .category img {
   border-radius: 10px;
@@ -300,12 +293,8 @@ header {
 }
 
 .banner-decor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
   padding: 40px;
   background: #fcf8f3;
@@ -333,7 +322,6 @@ header {
   padding: 10px 20px;
   text-decoration: none;
   margin-top: 10px;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
@@ -342,8 +330,6 @@ header {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
@@ -352,25 +338,18 @@ header {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
-  transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  transition: transform 0.5s ease, box-shadow 0.3s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
 }
 
 .card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card-content {
@@ -381,7 +360,6 @@ header {
   -webkit-backdrop-filter: blur(1.5px);
           backdrop-filter: blur(1.5px);
   padding: 10px 15px;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -393,7 +371,6 @@ header {
   -webkit-backdrop-filter: blur(1.5px);
           backdrop-filter: blur(1.5px);
   padding: 10px 15px;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -402,12 +379,8 @@ header {
 }
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 20px;
   position: absolute;
   right: 25%;
@@ -440,7 +413,6 @@ header {
   position: relative;
   width: 285px;
   background-color: #f4f5f7;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .card h2 {
@@ -462,15 +434,9 @@ header {
   line-height: 150%; /* 24px */
 }
 .card .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: unsafe;
-      -ms-flex-pack: unsafe;
-          justify-content: unsafe;
+  align-items: center;
+  justify-content: unsafe;
   gap: 5px;
 }
 .card .price span {
@@ -529,15 +495,9 @@ img {
   position: absolute;
   top: 55%;
   left: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigate-icon img {
   width: 16px;
@@ -562,7 +522,6 @@ img {
   left: 0;
   opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .hove button {
@@ -575,7 +534,6 @@ img {
   left: 12%;
   border: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
 .hove button a {
@@ -586,7 +544,6 @@ img {
   line-height: 150%;
   text-decoration: none;
   color: #b88e2f;
-  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 
@@ -600,4 +557,4 @@ img {
 }
 .hove button:hover a {
   color: #fff;
-}
+}/*# sourceMappingURL=main.css.map */
