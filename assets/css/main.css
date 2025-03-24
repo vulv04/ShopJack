@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,10 +192,6 @@ h6 {
   font-weight: 800;
 }
 
-header {
-  background-color: #fff;
-}
-
 .banner {
   position: relative;
   width: 100%;
@@ -299,132 +296,208 @@ header {
   margin-top: 10px;
 }
 
-.banner-decor {
+.decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-section,
+.image-section {
+  padding: 40px;
+}
+
+.text-section {
+  margin: auto;
+}
+
+.text-section h1 {
+  color: #3A3A3A;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.subtitle {
+  color: #3A3A3A;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.text-section p {
+  color: #616161;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.btn {
+  background-color: #B88E2F;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.image-section {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-1 {
+  width: 350px;
+}
+
+.image-section1 {
+  padding: 40px 40px 40px 0px;
+  position: relative;
+}
+
+.circle-button {
+  position: absolute;
+  top: 30%;
+  right: 40px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
-  padding: 40px;
-  background: #fcf8f3;
-  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border: 2px solid #fff;
 }
 
-.decor-text {
-  max-width: 400px;
+.circle-button:hover {
+  background-color: #FCF8F3;
 }
 
-.decor-text h1 {
-  font-size: 2rem;
-  color: #4a4039;
-}
-
-.decor-text p {
-  color: #7a7a7a;
-  margin: 10px 0;
-}
-
-.decor-text .btn {
-  display: inline-block;
-  background: #b88e2f;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-top: 10px;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.decor-text .btn:hover {
-  background-color: #7a5e3f;
-}
-
-.cards {
+.dots-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.dot.active {
+  background-color: orange;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.dot:hover {
+  background-color: orange;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .card {
   position: relative;
+  width: 350px;
+  background: url("./assets/background.jpg") no-repeat center center/cover;
+  border-radius: 12px;
   overflow: hidden;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
-  transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-  transition: transform 0.5s ease, box-shadow 0.3s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
-}
-
-.card img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-
-.card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+}
+
+.label {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.arrow-button {
   position: absolute;
-  bottom: 28px;
-  left: 28px;
-  background: rgba(255, 255, 255, 0.72);
-  -webkit-backdrop-filter: blur(1.5px);
-          backdrop-filter: blur(1.5px);
-  padding: 10px 15px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.card-contentt {
-  position: absolute;
-  bottom: 124px;
-  left: 28px;
-  background: rgba(255, 255, 255, 0.72);
-  -webkit-backdrop-filter: blur(1.5px);
-          backdrop-filter: blur(1.5px);
-  padding: 10px 15px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.card:hover .card-content {
-  opacity: 1;
-}
-
-.pagination {
+  bottom: 80px;
+  right: 147px;
+  width: 60px;
+  height: 60px;
+  background-color: #B1853F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
-  position: absolute;
-  right: 25%;
-  top: 93%;
+  cursor: pointer;
 }
 
-.card-content span {
-  color: #3a3a3a;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
+.arrow-button i {
+  color: #fff;
+  font-size: 20px;
 }
-.card-content p {
-  color: #616161;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
+
+.circle-button {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border: 2px solid #fff;
+  /* Viền trắng nổi bật */
+}
+
+.circle-button i {
+  color: #B1853F;
+  /* Màu mũi tên */
+  font-size: 20px;
 }
