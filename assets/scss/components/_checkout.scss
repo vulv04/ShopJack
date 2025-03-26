@@ -6,7 +6,6 @@
 }
 
 .wap {
-  max-width: 1440px;
   form {
     display: grid;
     gap: 20px;
@@ -42,14 +41,16 @@
   gap: 22px;
 }
 
-.block1 > div:not(.input-ngang) {
+.block1>div:not(.input-ngang) {
   display: flex;
   flex-direction: column;
   gap: 22px;
   margin-left: 31px;
   margin-bottom: 22px;
-  width: calc(211px * 2 + 22px); /* Same width as two inputs in .input-ngang */
+  width: calc(211px * 2 + 22px);
+  /* Same width as two inputs in .input-ngang */
 }
+
 .block1 input {
   width: 100%;
   height: 55px;
@@ -77,18 +78,22 @@ label {
   font-weight: 400;
   line-height: normal;
 }
+
 h1 {
   font-size: 18px;
   margin-top: 50px;
 }
+
 .summary {
   margin-bottom: 20px;
 }
+
 .summary div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
 }
+
 .total {
   color: var(--Primary, #b88e2f);
   font-family: Poppins;
@@ -97,8 +102,10 @@ h1 {
   font-weight: 700;
   line-height: normal;
 }
+
 .payment-methods {
   margin: 20px 0;
+
   p {
     color: #9f9f9f;
 
@@ -111,14 +118,17 @@ h1 {
     margin-top: 11px;
   }
 }
+
 .payment-methods input[type="radio"] {
   margin-right: 8px;
 }
+
 .privacy-policy {
   font-size: 12px;
   color: #555;
   margin: 20px 0;
 }
+
 button {
   width: 318px;
   height: 64px;
@@ -129,9 +139,11 @@ button {
   margin-left: 160px;
   margin-top: 39px;
 }
+
 button:hover {
   background: #333;
 }
+
 .hi {
   display: flex;
   align-items: center;
@@ -139,6 +151,7 @@ button:hover {
   color: #000;
   margin-top: 87px;
   margin-bottom: 14px;
+
   h3 {
     font-family: Poppins;
     font-size: 24px;
@@ -147,6 +160,7 @@ button:hover {
     line-height: normal;
   }
 }
+
 .thaydoi label {
   color: #9f9f9f;
   font-family: Poppins;
@@ -156,9 +170,11 @@ button:hover {
   line-height: normal;
   margin: 11px 0;
 }
+
 .thaydoi {
   margin-top: 25px;
 }
+
 .privacy-policy p {
   color: #000;
 

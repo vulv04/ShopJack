@@ -30,6 +30,8 @@
 @import "components/paginate";
 @import "components/productList";
 @import "components/services";
+@import "components/checkout";
+@import "components/filterGroup";
 
 // 6. Pages - SCSS riêng cho từng trang
 @import "pages/about";
@@ -39,6 +41,7 @@
 @import "pages/home";
 @import "pages/order";
 @import "pages/productDetail";
+
 
 @import 'themes/dark';
 
