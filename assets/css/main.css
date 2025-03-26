@@ -501,3 +501,238 @@ h6 {
   /* Màu mũi tên */
   font-size: 20px;
 }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.pagination li {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f6f2;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.pagination .active {
+  background-color: #b88e2f;
+  color: #fff;
+  border: none;
+}
+
+.pagination li:hover {
+  background-color: #e6dac7;
+}
+
+.comparison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+.comparison h1 {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+}
+.comparison p {
+  color: #727272;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.comparison-title {
+  margin-top: -100px;
+}
+
+.view {
+  border-bottom: 2px solid #727272;
+}
+
+.compar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 47px;
+}
+.compar img {
+  margin-bottom: 10px;
+}
+.compar h3 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%;
+  margin-bottom: 10px;
+  /* 30.36px */
+}
+.compar .price {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.compar span {
+  color: #9F9F9F;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 2px solid #9F9F9F;
+  padding: 5px;
+}
+
+.add-product h3 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+}
+.add-product .btn {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1440px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.title h1 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.title p {
+  color: #9F9F9F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0 80px;
+}
+
+.phone-time {
+  gap: 10px;
+  padding: 10px 0;
+}
+.phone-time p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.phone-time h4 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.form input {
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 528px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 0;
+}
+
+button {
+  padding: 14px 90px;
+  width: 237px;
+  background-color: #b1853f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
