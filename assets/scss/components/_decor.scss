@@ -1,15 +1,14 @@
 .decor {
     display: flex;
+    background: #FCF8F3;
+    justify-content: center;
+    margin: 50px;
 }
 
 .text-section,
 .image-section {
     padding: 40px;
 
-}
-
-.text-section {
-    margin: auto;
 }
 
 .text-section h1 {
@@ -110,7 +109,7 @@
     background-color: orange;
     transform: scale(1.2);
 }
-.card {
+.card-1 {
     position: relative;
     width: 350px;
     background: url('./assets/background.jpg') no-repeat center center/cover;
@@ -132,7 +131,7 @@
 .arrow-button {
     position: absolute;
     bottom: 80px;
-    right: 43px;
+    right: 93px;
     width: 60px;
     height: 60px;
     background-color: #B1853F;

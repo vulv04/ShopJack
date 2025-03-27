@@ -109,6 +109,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -215,16 +216,35 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   font-weight: 500;
-  padding: 10px;
-  border-radius: 10px;
 }
 
-nav a:hover {
-  color: orange;
-  background-color: aqua;
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+nav a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .icon {
@@ -336,7 +356,7 @@ footer {
 }
 
 .footer-links li {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .footer-links a {
@@ -367,8 +387,14 @@ footer {
   white-space: nowrap;
 }
 
+.newsletter-text input {
+  border: none;
+  outline: none;
+}
+
 .newsletter-text.subscribe {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .newsletter-underline {
@@ -428,8 +454,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
 }
 
 .flex .home a {
@@ -452,11 +480,11 @@ footer {
   line-height: normal;
 }
 
-.title {
+.title-2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 50px;
 }
-.title h3 {
+.title-2 h3 {
   margin-top: 20px;
   color: #333;
   font-size: 32px;
@@ -464,7 +492,7 @@ footer {
   font-weight: bold;
   line-height: normal;
 }
-.title p {
+.title-2 p {
   color: #333;
   font-size: 16px;
   font-style: normal;
@@ -502,15 +530,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #FCF8F3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
 }
 
 .text-section,
 .image-section {
   padding: 40px;
-}
-
-.text-section {
-  margin: auto;
 }
 
 .text-section h1 {
@@ -632,7 +661,7 @@ footer {
           transform: scale(1.2);
 }
 
-.card {
+.card-1 {
   position: relative;
   width: 350px;
   background: url("./assets/background.jpg") no-repeat center center/cover;
@@ -656,7 +685,7 @@ footer {
 .arrow-button {
   position: absolute;
   bottom: 80px;
-  right: 43px;
+  right: 93px;
   width: 60px;
   height: 60px;
   background-color: #B1853F;
@@ -799,9 +828,9 @@ footer {
 }
 
 .box-card {
-  max-width: 1326px;
+  max-width: 1440px;
   /* background-color: aqua; */
-  margin: 0 auto;
+  margin: 0 60px;
 }
 
 .card {
@@ -895,8 +924,8 @@ img {
 
 .box-card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 30px;
 }
 
 .navigate-icon {
@@ -975,6 +1004,39 @@ img {
 }
 .hove button:hover a {
   color: #fff;
+}
+
+.title-4 {
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin: 50px;
+}
+
+.show {
+  border: 1px solid #b88e2f;
+  padding: 20px 40px;
+  width: 200px;
+  margin: 50px auto;
+  text-align: center;
+  color: #b88e2f;
+}
+
+.show a {
+  text-decoration: none;
+  color: #b88e2f;
+}
+
+.show a:hover {
+  color: #fff;
+}
+
+.show:hover {
+  background-color: #b88e2f;
 }
 
 *,
@@ -1068,11 +1130,6 @@ label {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-h1 {
-  font-size: 18px;
-  margin-top: 50px;
 }
 
 .summary {
@@ -1228,7 +1285,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 98px;
+  padding: 0 20px;
   width: 100%;
   height: 100px;
   background: #f9f1e7;
@@ -1255,7 +1312,7 @@ button:hover {
 .right select {
   margin-left: 10px;
   width: 65px;
-  height: 55px;
+  height: 28px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border: none;
@@ -1333,7 +1390,7 @@ tbody {
   font-weight: 600;
 }
 
-.price,
+.price-3,
 .price1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,12 +1407,12 @@ tbody {
   font-weight: 500;
 }
 
-.price p,
+.price-3 p,
 .price1 p {
   margin-bottom: 31px;
 }
 
-.price p {
+.price-3 p {
   color: #9f9f9f;
 }
 
@@ -1388,11 +1445,12 @@ tbody {
   gap: 30px;
 }
 
-td button {
+.quantity {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #9f9f9f;
   background-color: #fff;
+  outline: none;
 }
 
 .comparison {
@@ -1449,7 +1507,7 @@ td button {
   margin-bottom: 10px;
   /* 30.36px */
 }
-.compar .price {
+.compar .price-2 {
   color: #000;
   font-size: 18px;
   font-style: normal;

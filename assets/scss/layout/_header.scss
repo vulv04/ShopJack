@@ -16,16 +16,29 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 10px;
+    font-weight: 500;   
+}
+nav a {
+    position: relative;
+    text-decoration: none;
 }
 
-nav a:hover{
-    color: orange;
-    background-color: aqua;
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
 }
 
 .icon {

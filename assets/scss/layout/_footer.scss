@@ -53,7 +53,6 @@ footer {
     padding: 40px 100px;
     border-top: 1px solid #eee;
 }
-
 .footer-section {
     flex: 1;
     text-align: left;
@@ -81,7 +80,7 @@ footer {
 }
 
 .footer-links li {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .footer-links a {
@@ -107,9 +106,13 @@ footer {
     margin: 0;
     white-space: nowrap;
 }
-
+.newsletter-text input{
+    border: none;
+    outline: none;
+}
 .newsletter-text.subscribe {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .newsletter-underline {

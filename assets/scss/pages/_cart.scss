@@ -56,7 +56,7 @@ tbody {
   font-weight: 600;
 }
 
-.price,
+.price-3,
 .price1 {
   display: flex;
   justify-content: space-between;
@@ -69,12 +69,12 @@ tbody {
   font-weight: 500;
 }
 
-.price p,
+.price-3 p,
 .price1 p {
   margin-bottom: 31px;
 }
 
-.price p {
+.price-3 p {
   color: #9f9f9f;
 }
 
@@ -101,9 +101,10 @@ tbody {
   gap: 30px;
 }
 
-td button {
+.quantity {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #9f9f9f;
   background-color: #fff;
+  outline: none;
 }
