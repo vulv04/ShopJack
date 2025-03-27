@@ -3,6 +3,7 @@ table {
   border-collapse: collapse;
   margin-bottom: 90px;
 }
+
 th,
 td {
   color: #9f9f9f;
@@ -13,20 +14,24 @@ td {
   text-align: center;
   vertical-align: middle;
 }
+
 th {
   background-color: rgba(249, 241, 231, 1);
   font-weight: 600;
 }
+
 tbody {
   margin-top: 20px;
   display: table-row-group;
 }
+
 .product-info {
   display: flex;
   align-items: center;
   gap: 15px;
   justify-content: center;
 }
+
 .product-image {
   width: 80px;
   height: 80px;
@@ -34,6 +39,7 @@ tbody {
   border-radius: 10px;
   background: #d9d9d9;
 }
+
 .checkout-container {
   width: 40%;
   background-color: rgba(249, 241, 231, 1);
@@ -42,13 +48,15 @@ tbody {
   flex-direction: column;
   align-items: center;
 }
+
 .checkout-container h2 {
   margin-bottom: 61px;
   text-align: center;
   font-size: 32px;
   font-weight: 600;
 }
-.price,
+
+.price-3,
 .price1 {
   display: flex;
   justify-content: space-between;
@@ -60,17 +68,21 @@ tbody {
   font-size: 16px;
   font-weight: 500;
 }
-.price p,
+
+.price-3 p,
 .price1 p {
   margin-bottom: 31px;
 }
-.price p {
+
+.price-3 p {
   color: #9f9f9f;
 }
+
 .price1 p {
   color: #b88e2f;
   font-size: 20px;
 }
+
 .checkout-button {
   width: 222px;
   height: 59px;
@@ -81,15 +93,18 @@ tbody {
   border-radius: 15px;
   margin: 20px 0 40px 0;
 }
+
 .wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
 }
-td button {
+
+.quantity {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #9f9f9f;
   background-color: #fff;
+  outline: none;
 }

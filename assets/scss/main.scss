@@ -1,22 +1,21 @@
-// 1. Abstracts - Chứa các biến, mixins và functions
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+//max-width: 480px
+//max-width: 768px
+//max-width: 1024px
 
-// 2. Vendors - Các thư viện bên ngoài
-@import "vendors/normalize";
-@import "vendors/bootstrap";
 
-// 3. Base - Các quy tắc CSS cơ bản
-@import "base/reset";
-@import "base/global";
-@import "base/typography";
 
-// 4. Layout - Định nghĩa bố cục chung
-@import "layout/grid";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/footer";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+@import 'base/reset';
+@import 'base/global';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/sidebar';
 
 // 5. Components - Các thành phần tái sử dụng
 @import "components/breadcrumbs";
@@ -26,13 +25,14 @@
 @import "components/collections";
 @import "components/decor";
 @import "components/filterProduct";
-@import "components/filterGroup";
 @import "components/hero";
 @import "components/modal";
 @import "components/paginate";
 @import "components/productList";
 @import "components/services";
 @import "components/checkout";
+@import "components/filterGroup";
+
 // 6. Pages - SCSS riêng cho từng trang
 @import "pages/about";
 @import "pages/cart";
@@ -42,5 +42,8 @@
 @import "pages/order";
 @import "pages/productDetail";
 
-// 7. Themes - Chủ đề giao diện
-@import "themes/dark";
+
+@import 'themes/dark';
+
+@import 'vendors/bootstrap';
+@import 'vendors/normalize';

@@ -1,0 +1,76 @@
+
+.comparison{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    h1 {
+            color: #000;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        p{
+            color: #727272;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+        }
+}
+.comparison-title{
+    margin-top: -100px;
+}
+.view{
+    border-bottom: 2px solid #727272;
+}
+.compar{
+    display: flex;
+    justify-content: space-around;
+    gap: 47px;
+    img{
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 126.5%;
+            margin-bottom: 10px;
+            /* 30.36px */
+    }
+    .price-2{
+        color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+    }
+    span{
+        color: #9F9F9F;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-left: 2px solid #9F9F9F ;
+            padding: 5px;
+    }
+}
+.add-product{
+    h3{
+        color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 126.5%;
+    }
+            .btn{
+            color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 126.5%;
+        }
+}
